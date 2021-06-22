@@ -1,5 +1,4 @@
 global name
-
 import random
 
 
@@ -431,8 +430,8 @@ class myfirstClass:
     bells = ['yellow' for c in youtubers]
     print(bells)
 
-    #bananas = "oranges"
-    #fruits [vegetables if vegetables != "ban"]
+    # bananas = "oranges"
+    # fruits [vegetables if vegetables != "ban"]
 
     newlist = [q if q != "Skeppy" else "DanTDM" for q in youtubers]
     print(newlist)
@@ -530,7 +529,7 @@ class myfirstClass:
 
     print(t)
 
-    #Python Sets
+    # Python Sets
 
     thisset = {"fortnite", "minecraft", "roblox", "among us", "hypixel"}
     print(thisset)
@@ -548,9 +547,182 @@ class myfirstClass:
     thisset1 = set(("bruh", 1))
     print(thisset1)
 
-    #Accessing Items through Loops
+    # Accessing Items through Loops
 
     for b in set3:
         print(b)
 
-    print("a" in set3)
+    # Checks if that value is in that set; ex. print ("orange" in fruits). It will print true or false
+    print("a" in set3) 
+
+    # Adding Set Items
+    set3.add("e")
+    print(set3)
+
+    tropical_Islands = {"ManuLand", "JawaIsland", "Hawaii", "Honolulu", "O'ahu", "ManuLand", "JawaIsland"}
+    thisset.update(tropical_Islands)
+    print(thisset)
+
+    # Removing Items from the Set
+
+    tropical_Islands.remove("ManuLand")
+    tropical_Islands.discard("JawaIsland")
+    print(tropical_Islands)
+
+    mmmm = tropical_Islands.pop()
+    print(mmmm)
+
+    thisset11 = {"dead", "dead", "dead", "dead"}
+
+    del thisset11
+
+    # Looping through sets
+    for bruh in tropical_Islands:
+      print(bruh)
+
+    # Joining Sets
+    # The union() method returns a new set with all items from both sets
+    # The update() method inserts the items in set2 into set1:
+    # The intersection_update() method will keep only the items that are present in both sets.
+    x = {"apple", "google", "microsoft"}
+    y = {"google", "microsoft", "apple"}
+
+    x.intersection(y) # Result will be apple and microsoft
+    # The intersection() method will return a NEW set, that only contains the items that are present in both sets.
+    # The symmetric_difference_update() method will keep only the elements that are NOT present in both sets.
+    x1 = {"apple", "google", "microsoft"}
+    y1 = {"google", "samsung", "apple"}
+
+    x1.symmetric_difference_update(y1)
+    print(x1) # results in everything except for apple
+    # The symmetric_difference() method will return a NEW set, that contains only the elements that are NOT present in both sets.
+
+    # Brief overview of Set Methods
+    
+    # add()	Adds an element to the set
+    
+    # clear()	Removes all the elements from the set
+    
+    # copy()	Returns a copy of the set
+    
+    # difference()	Returns a set containing the difference between two or more sets
+    
+    # difference_update()	Removes the items in this set that are also included in another, specified set
+    
+    # discard()	Remove the specified item
+    
+    # intersection()	Returns a set, that is the intersection of two other sets
+    
+    # intersection_update()	Removes the items in this set that are not present in other, specified set(s)
+    
+    # isdisjoint()	Returns whether two sets have a intersection or not
+    
+    # issubset()	Returns whether another set contains this set or not
+    
+    # issuperset()	Returns whether this set contains another set or not
+    
+    # pop()	Removes an element from the set
+    
+    # remove()	Removes the specified element
+    
+    # symmetric_difference()	Returns a set with the symmetric differences of two sets
+    
+    # symmetric_difference_update()	inserts the symmetric differences from this set and another
+    
+    # union()	Return a set containing the union of sets
+    
+    # update()	Update the set with the union of this set and others
+
+
+    # Python Dictionaries
+    carsMemes = {
+      "meme1": "I am speed",
+      "meme2": "I am fast",
+      "meme3": "I don't know what to say anymore",
+      "meme4": False,
+      "meme5": False,
+    }
+
+    print(carsMemes["meme1"])
+    x = carsMemes["meme2"]
+    x9 = carsMemes.get("meme3")
+    print(x)
+    print(x9)
+
+    # Getting all the KEYS
+    memes = carsMemes.keys()
+
+    print(memes) # before the change
+
+    carsMemes["meme6"] = "rapGod"
+
+    print(memes) # after the change
+
+    # Getting all the VALUES
+    memesXD = carsMemes.values()
+
+    print(memesXD) # before the change
+
+    carsMemes["meme4"] = "Jamal has joined the chat"
+
+    print(memesXD) # after the change
+
+    # The items() method will return each item in a dictionary, as tuples in a list.
+    jamaml = carsMemes.items()
+    print(jamaml)
+
+    # To determine if a specified key is present in a dictionary use the in keyword
+    
+    spareDict = {
+      "object1": "cars",
+      "object2": "dress",
+      "object3": "bandages",
+      "object4": "toys",
+      "object5": "shoes",
+      "object6": "watches",
+      "object7": "time machines"
+
+    }
+
+    # Changing in the Dictionary 
+    spareDict["object1"] = 2020 
+    # The update() method; used for both changing and add items into the Dictionary
+    spareDict.update({"object3": 1663}) 
+
+    # Remove items from dictionary
+
+    # The pop() method removes the item with the specified key name
+    # The popitem() method removes the last inserted item
+    # The del keyword removes the item with the specified key name
+    # The clear() method empties the dictionary
+
+    # Looping through Dictionaries
+    
+    for x in spareDict: # Prints all key names one by one
+      print(x)
+
+    for x1 in spareDict: # Prints all values one by one
+      print(spareDict[x1])
+
+    for x2 in spareDict.keys():
+      print(x2)
+    
+    for x3, x4 in spareDict.items():
+      print(x3, x4)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
